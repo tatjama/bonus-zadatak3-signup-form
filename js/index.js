@@ -6,7 +6,7 @@
       const errors = document.querySelectorAll(".error-message");
       const fields = document.querySelectorAll(".field");
       const fieldNames = ["First name", "Last name", "Email", "Password"]; 
-      const validFormats = [/^[a-zA-Z ]+$/,/^[a-zA-Z ]+$/ ,
+      const validFormats = [/^[a-zA-ZŠšĐđŽžČčĆć]+$/,/^[a-zA-ZŠšĐđŽžČčĆć ]+$/ ,
          /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/]; 
 
       const onFocus = (e) => {
@@ -16,8 +16,8 @@
         element.nextSibling.nextElementSibling.innerHTML = "";
       }
 
-      const handleSubmit = (fields) => {
-        if(fields === 4) 
+      const handleSubmit = (validFields) => {
+        if(validFields === 4) 
         document.getElementById("user").innerHTML = 
         "Welcome <span> " + firstName.value + " " + lastName.value + " </span> !";
       }
@@ -45,7 +45,7 @@
         e.preventDefault();
         const formValues = [firstName.value, lastName.value, email.value, password.value];  
         let validFields =  formValidation( formValues);
-        handleSubmit(validFields);
+        handleSubmit(validFields);S
        }
        
        fields.forEach(field => field.addEventListener('focus', onFocus));
