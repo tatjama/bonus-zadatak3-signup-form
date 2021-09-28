@@ -45,7 +45,7 @@
         e.preventDefault();
         const formValues = [firstName.value, lastName.value, email.value, password.value];  
         let validFields =  formValidation( formValues);
-        handleSubmit(validFields);S
+        handleSubmit(validFields);
        }
        
        fields.forEach(field => field.addEventListener('focus', onFocus));
