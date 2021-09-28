@@ -106,12 +106,9 @@ input{
 }
 input:focus{
     color: var(--text-focus);
-    border: 1px solid var(--primary-violet);
+    border: 1px solid var(--primary-violet);    
 }
-.invalid{
-    color: var(--primary-red);
-    border: 2px solid var(--primary-red);
-}
+
 input::placeholder{
     font-size: 14px;
     color: var(--text-placeholder);
@@ -133,6 +130,19 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color: var(--hover-green);
 }
+input:focus{
+
+}
+.invalid{
+    color: var(--primary-red);
+    border: 2px solid var(--primary-red);
+    background-image: url(../images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: center right 16px;
+}
+.invalid::placeholder{
+    color: transparent;
+}
 .error-message{
     font-size: 11px;
     line-height: 16px;
@@ -140,7 +150,15 @@ input[type="submit"]:hover{
     text-align: right;
     margin-bottom: 6px;
     margin-right: 10px;
-    display: none;
+}
+#user{
+    
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+#user span{
+    color:var(--primary-violet);
 }
 .terms{
     font-size: 11px;
@@ -153,6 +171,7 @@ input[type="submit"]:hover{
     text-decoration: none;
     cursor: pointer;
 }
+
 /*End Form Section*/
 .attribution { 
     font-size: 11px; 

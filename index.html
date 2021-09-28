@@ -14,6 +14,7 @@
 <body>
   <div class="container">
     
+    
       <main class="flexbox-container">
         <!--Start Content section-->
         <article class="item content">
@@ -21,24 +22,26 @@
           <p class="text">See how experienced developers solve problems in real-time. Watching scripted tutorials 
             is great, but understanding how developers think is invaluable. 
           </p>
+          <p id="user"></p>
         </article>
         <!--End Content section-->
         <!--Start Form section-->
         <section class="item form-container">
+          
           <header>
             <p class="banner"> <span>Try it free 7 days </span> then $20/mo. thereafter</p>
           </header>
           <section class="form-section">
-            <form action="#" autocomplete="off" novalidate="novalidate">
+            <form action="#" name="signUpForm" autocomplete="off" novalidate="novalidate">
               <fieldset>
-                <input type="text" placeholder="First Name" name="fname" autofocus>
-                <p class="error-message">First name cannot be empty</p>
-                <input type="text" placeholder="Last Name"  name="lname">
-                <p class="error-message">Last Name cannot be empty</p>
-                <input class="invalid" type="email" placeholder="Email Address" name="email">
-                <p class="error-message">Looks like this is not an email</p>
-                <input type="password" placeholder="Password" name="password">
-                <p class="error-message">Password cannot be empty</p>
+                <input type="text" placeholder="First Name" id="first-name" class="field" name="fname" autofocus>
+                <p class="error-message"></p>
+                <input type="text" placeholder="Last Name" id="last-name" class="field"  name="lname">
+                <p class="error-message"></p>
+                <input type="email" placeholder="Email Address" id="email" class="field" name="email">
+                <p class="error-message"></p>
+                <input type="password" placeholder="Password" id="password" class="field" name="password">
+                <p class="error-message"></p>
                 <input type="submit" value="Claim your free trial">
                 <footer class="terms">
                   <p>By clicking the button, you are agreeing to our 
@@ -52,7 +55,8 @@
         </section>
         <!--End Form section-->
       </main>
-    
+      
+    <script src="./js/index.js"></script>
   </div>  
   <!--Start Attribution section-->
   <footer>
