@@ -2,33 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Intro component with sign up form</title>
   <link rel="stylesheet" href="./style/style.css"/>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
   <div class="container">
-    <div class="wrapper">
-      <main class="flexbox">
+    
+      <main class="flexbox-container">
+        <!--Start Content section-->
         <article class="item content">
           <h1>Learn to code by watching others</h1>
           <p class="text">See how experienced developers solve problems in real-time. Watching scripted tutorials 
             is great, but understanding how developers think is invaluable. 
           </p>
         </article>
+        <!--End Content section-->
+        <!--Start Form section-->
         <section class="item form-container">
+          <header>
             <p class="banner"> <span>Try it free 7 days </span> then $20/mo. thereafter</p>
-          
+          </header>
           <section class="form-section">
             <form action="#" autocomplete="off" novalidate="novalidate">
               <fieldset>
@@ -41,23 +40,27 @@
                 <input type="password" placeholder="Password" name="password">
                 <p class="error-message">Password cannot be empty</p>
                 <input type="submit" value="Claim your free trial">
-                <p class="terms">
-                  By clicking the button, you are agreeing to our 
-                  <span><a href="#" target="_blank"> Terms and Services</a></span>
-                </p>
+                <footer class="terms">
+                  <p>By clicking the button, you are agreeing to our 
+                    <span><a href="#" target="_blank"> Terms and Services</a></span>
+                  </p>
+                </footer>
                 
               </fieldset>
             </form>
           </section>
         </section>
+        <!--End Form section-->
       </main>
-    </div>
+    
   </div>  
+  <!--Start Attribution section-->
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://my-react-portfolio-tatjana.vercel.app/" target="_blank">Tatjana Marković</a>.
     </p>
   </footer>
+  <!--End Attribution section-->
 </body>
 </html>
